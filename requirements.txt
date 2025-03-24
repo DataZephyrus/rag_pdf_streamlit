@@ -1,0 +1,14 @@
+openlayer>=0.2.0a45
+streamlit
+langchain
+langchain-community
+langchain-openai
+pypdf
+pydantic
+python-dotenv
+openai
+faiss-cpu
+pdf2image
+pytesseract
+tiktoken
+watchdog

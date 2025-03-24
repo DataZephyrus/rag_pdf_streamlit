@@ -1,0 +1,14 @@
+services:
+    streamlit-app:
+        build:
+            context: ..
+            dockerfile: docker/Dockerfile
+            args:
+                - BUILDKIT_INLINE_CACHE=0
+        ports:
+            - "8501:8501"
+        volumes:
+            - ../:/app
+        environment:
+            - PYTHONUNBUFFERED=1
+        restart: unless-stopped
