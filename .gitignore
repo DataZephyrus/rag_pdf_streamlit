@@ -121,3 +121,5 @@ flask/
 .DS_Store
 
 .zed
+
+/reference
