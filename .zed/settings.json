@@ -25,6 +25,16 @@
       "hard_tabs": false
     }
   },
+  "language_overrides": {
+    "Python": {
+      "environment": {
+        "conda": {
+          "conda_path": "/Users/rushiparikh/miniconda3/bin/conda",
+          "environment_path": "/Users/rushiparikh/miniconda3/envs/streamlit"
+        }
+      }
+    }
+  },
   "lsp": {
     "ruff": {
       "initialization_options": {

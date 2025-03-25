@@ -4,9 +4,11 @@ import streamlit as st
 from typing import List, Optional
 import PyPDF2
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.schema import Document  # Add this import
+from langchain.schema import Document
+from app.utils.openlayer_integration import trace_function
 
 
+@trace_function
 def extract_text_from_pdf(pdf_file) -> Optional[List[str]]:
     """Extracts text from a PDF file."""
     try:
@@ -25,6 +27,7 @@ def extract_text_from_pdf(pdf_file) -> Optional[List[str]]:
         return None
 
 
+@trace_function
 def process_uploaded_file(uploaded_file) -> Optional[List[str]]:
     """Processes an uploaded file and extracts text."""
     if uploaded_file is None:
