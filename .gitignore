@@ -119,3 +119,5 @@ dmypy.json
 flask/
 
 .DS_Store
+
+.zed
