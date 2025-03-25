@@ -117,3 +117,5 @@ dmypy.json
 .vscode/
 
 flask/
+
+.DS_Store
